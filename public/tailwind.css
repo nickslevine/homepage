@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+
+.card {
+  font-family: "Times New Roman";
+  @apply block h-16 bg-white w-56  p-3 text-gray-800 border border-gray-900 font-normal my-4  box-content tracking-wider pt-8 leading-6;
+}
+
+/*  border-dotted shadow-lg  rounded-lg */
+
+.card:hover {
+  @apply bg-gray-200;
+}
+
+@tailwind utilities;
+
+.icon-position {
+  top: 0.5rem;
+  right: 0.5rem;
+}
