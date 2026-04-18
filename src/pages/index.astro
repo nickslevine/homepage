@@ -9,6 +9,10 @@
 		<meta name="viewport" content="width=device-width" />
 		<title>Nick Levine</title>
 		<meta name="description" content="Nick Levine — AI Researcher" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
 	</head>
 	<body>
 
@@ -41,27 +45,29 @@
 			<section class="work">
 				<h2>Some things I've made:</h2>
 				<div class="work-list">
-					<a href="https://mafiabench.org" target="_blank" rel="noopener" class="work-item">
-						<span class="work-title">mafiabench</span>
-						<span class="work-desc">LM social deduction benchmark</span>
+					<a href="https://x.com/status_effects/status/2037255174259913026" target="_blank" rel="noopener" class="work-item">
+						<span class="work-title">budok-ai</span>
+						<span class="work-desc">(fighting game harness for LMs, 2026)</span>
 					</a>
 					<a href="https://boogiebench.com" target="_blank" rel="noopener" class="work-item">
 						<span class="work-title">boogiebench</span>
-						<span class="work-desc">How well can LMs compose music?</span>
+						<span class="work-desc">(how well can LMs compose music? 2025)</span>
 					</a>
-					<a href="https://x.com/status_effects/status/2037255174259913026" target="_blank" rel="noopener" class="work-item">
-						<span class="work-title">budok-ai</span>
-						<span class="work-desc">LM fighting game harness</span>
-					</a>
-					<a href="https://journals.sagepub.com/doi/10.1177/0952695116686016" target="_blank" rel="noopener" class="work-item">
-						<span class="work-title">on the history of information overload</span>
+					<a href="https://mafiabench.org" target="_blank" rel="noopener" class="work-item">
+						<span class="work-title">mafiabench</span>
+						<span class="work-desc">(social deduction benchmark for LMs, 2025)</span>
 					</a>
 					<a href="https://www.winton.com/news/from-us-steel-to-urls-whats-in-a-company-name" target="_blank" rel="noopener" class="work-item">
 						<span class="work-title">on the history of company names</span>
+						<span class="work-desc">(winton, 2018)</span>
+					</a>
+					<a href="https://journals.sagepub.com/doi/10.1177/0952695116686016" target="_blank" rel="noopener" class="work-item">
+						<span class="work-title">on the history of information overload</span>
+						<span class="work-desc">(history of the human sciences, 2017)</span>
 					</a>
 					<a href="https://www.nplusonemag.com/online-only/online-only/some-folks/" target="_blank" rel="noopener" class="work-item">
-						<span class="work-title">early chatbot art published in n+1</span>
-						<span class="work-desc">2015</span>
+						<span class="work-title">some folks</span>
+						<span class="work-desc">(early chatbot art, n+1, 2015)</span>
 					</a>
 				</div>
 			</section>
@@ -75,10 +81,11 @@
 				min-height: 100%;
 				-webkit-font-smoothing: antialiased;
 				-moz-osx-font-smoothing: grayscale;
-				font-family: Courier, 'Courier New', monospace;
+				font-feature-settings: 'liga' 1, 'calt' 1;
+				font-family: 'JetBrains Mono', monospace;
+				font-size: 13px;
 				background: #fff;
 				color: #000;
-				font-size: 14px;
 			}
 			.icon { width: 1.25rem; height: 1.25rem; display: block; }
 
@@ -89,15 +96,15 @@
 			}
 
 			.hero {
-				margin-bottom: 1rem;
-				padding-bottom: 0.75rem;
+				margin-bottom: 1.25rem;
+				padding-bottom: 1rem;
 				border-bottom: 1px dashed #999;
 			}
 
 			.name {
-				font-size: 14px;
+				font-size: 18px;
 				font-weight: 700;
-				font-family: inherit;
+				letter-spacing: -0.02em;
 			}
 
 			.hero-socials {
@@ -119,25 +126,20 @@
 			}
 
 			.hero-socials a {
-				font-size: 14px;
+				font-size: 12px;
 				color: #000;
 				text-decoration: none;
-				line-height: 1.6;
-			}
-			.hero-socials a:hover {
-				text-decoration: underline;
 			}
 
-			.hero-socials a[aria-label="GitHub"]::after { content: '-> github'; }
-			.hero-socials a[aria-label="Twitter / X"]::after { content: '-> twitter'; }
-			.hero-socials a[aria-label="LinkedIn"]::after { content: '-> linkedin'; }
-			.hero-socials a[aria-label="Email"]::after { content: '-> email'; }
+			.hero-socials a[aria-label="GitHub"]::after { content: '-> github'; text-decoration: underline; }
+			.hero-socials a[aria-label="Twitter / X"]::after { content: '-> twitter'; text-decoration: underline; }
+			.hero-socials a[aria-label="LinkedIn"]::after { content: '-> linkedin'; text-decoration: underline; }
+			.hero-socials a[aria-label="Email"]::after { content: '-> email'; text-decoration: underline; }
 
 			.about {
 				margin-top: 0.75rem;
-				font-size: 14px;
 				line-height: 1.55;
-				padding-bottom: 0.75rem;
+				padding-bottom: 1.25rem;
 				border-bottom: 1px dashed #999;
 			}
 
@@ -150,13 +152,12 @@
 			}
 
 			.work {
-				margin-top: 0.75rem;
+				margin-top: 1.25rem;
 			}
 
 			.work h2 {
-				font-size: 14px;
+				font-size: 13px;
 				font-weight: 700;
-				font-family: inherit;
 				margin-bottom: 0.5rem;
 			}
 
@@ -169,22 +170,24 @@
 			.work-item {
 				text-decoration: none;
 				color: #000;
-				font-size: 14px;
 				display: block;
 				line-height: 1.55;
 			}
-			.work-item:hover .work-title {
+			.work-title {
 				text-decoration: underline;
+				text-underline-offset: 2px;
 			}
 
 			.work-title::before {
-				content: '- ';
+				content: '-  ';
 				color: #999;
+				text-decoration: none;
+				display: inline-block;
+				white-space: pre;
 			}
 
 			.work-desc {
 				color: #999;
-				font-size: 14px;
 			}
 			.work-desc::before { content: '  '; }
 
